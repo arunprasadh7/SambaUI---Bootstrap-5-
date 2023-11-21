@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progressbar</title>
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="d-grid gap-3">
+        <div class="progress">
+          <div class="progress-bar" style="width: 0%"></div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar" style="width: 25%"></div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar" style="width: 50%"></div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar" style="width: 75%"></div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar" style="width: 100%"></div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <!-- ADDING WIDTH TO PROGRESS BAR  -->
+    <div class="container mt-5">
+      <div class="d-grid gap-3">
+        <div class="progress">
+          <div class="progress-bar w-0"></div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar w-25"></div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar w-50"></div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar w-75"></div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar w-100"></div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <!-- HEIGHT  -->
+    <div class="container mt-5">
+      <div class="progress" style="height: 1px">
+        <div class="progress-bar w-50"></div>
+      </div>
+      <br />
+      <div class="progress" style="height: 5px">
+        <div class="progress-bar w-75"></div>
+      </div>
+      <br />
+      <div class="progress">
+        <div class="progress-bar w-75"></div>
+      </div>
+    </div>
+
+    <hr />
+    <!-- LABELS  -->
+    <div class="container mt-5">
+      <div class="progress">
+        <div class="progress-bar w-25">25%</div>
+      </div>
+      <br />
+      <div class="progress">
+        <div class="progress-bar w-50">Label text</div>
+      </div>
+    </div>
+
+    <hr />
+    <!-- BACKGROUND COLOR -->
+    <div class="container mt-5">
+      <div class="progress">
+        <div class="progress-bar bg-danger w-25"></div>
+      </div>
+      <br />
+      <div class="progress">
+        <div class="progress-bar w-50 text-bg-warning">Label</div>
+      </div>
+    </div>
+
+    <hr />
+    <!-- MULTIPLE BARS -->
+    <div class="container mt-5">
+      <div class="progress-stacked">
+        <div class="progress-bar w-25 text-bg-success">These</div>
+        <div class="progress-bar w-25 text-bg-warning">are</div>
+        <div class="progress-bar w-25 text-bg-info">multiple</div>
+        <div class="progress-bar w-25 text-bg-dark">bars</div>
+      </div>
+    </div>
+
+    <hr />
+    <!-- STRIPED PROGRESS BARS -->
+    <div class="container mt-5">
+      <div class="progress">
+        <div
+          class="progress-bar progress-bar-striped w-25 text-bg-success"
+        ></div>
+      </div>
+      <div class="progress">
+        <div
+          class="progress-bar progress-bar-striped progress-bar-animated w-75"
+        >
+          animated bar
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
